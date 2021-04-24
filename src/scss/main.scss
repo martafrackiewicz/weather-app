@@ -1,0 +1,18 @@
+@import 'normalize.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1225px;
+  margin: 0 auto;
+  padding: 0;
+}
