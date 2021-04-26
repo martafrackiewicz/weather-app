@@ -1,6 +1,7 @@
 import Description from "../Description/Description"
 import IconAndText from "../IconAndText/IconAndText";
 import Search from "../Search/Search"
+import "./MainSection.scss";
 
 
 const MainSection = () => {
