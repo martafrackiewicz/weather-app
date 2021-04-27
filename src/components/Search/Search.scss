@@ -1,0 +1,17 @@
+@import "../../scss/colors";
+
+.search-bar {
+    text-align: center;
+    margin-top: 50px;
+    
+    input {
+        border-radius: 50px;
+        color: $c-search-placeholder;
+        border: none;
+        outline: none; 
+        padding: 10px 20px;
+        box-shadow: $box-shadow;
+        background-color: $c-search-background;
+    }
+
+}

@@ -1,3 +1,4 @@
+import "./IconAndText.scss";
 import sun from "../../icons/sun.png";
 
 const IconAndText = ({text}) => {

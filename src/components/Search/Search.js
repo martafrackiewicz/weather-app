@@ -1,3 +1,5 @@
+import "./Search.scss";
+
 const Search = () => {
     return (
         <div className="search-bar">

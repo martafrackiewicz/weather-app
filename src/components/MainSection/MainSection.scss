@@ -1,6 +1,17 @@
+@import "../../scss/colors";
+
 .main-section-container {
     display: grid;
     place-content: center;
+}
+
+.data-container {
+    width: 60%;
+    margin: 40px auto auto;
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+    background: $c-transparent-background;
+    padding: 20px 20px 60px 20px;
 }
 
 .conditions-container {

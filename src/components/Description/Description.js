@@ -1,3 +1,5 @@
+import "./Description.scss";
+
 const Description = () => {
     return (
         <div className="description-container">

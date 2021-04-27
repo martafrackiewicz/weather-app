@@ -1,0 +1,15 @@
+.icon-and-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .icon {
+        width: 15%;
+    }
+
+    .text {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+}

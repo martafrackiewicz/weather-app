@@ -1,0 +1,31 @@
+@import "../../scss/colors";
+
+@mixin description-style {
+    color: $c-main-font;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.description {
+
+    &-container {
+        text-align: center;
+    }
+
+    &-city {
+        color: $c-main-font;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+
+    &-date {
+        margin-top: 0;
+        color: $c-main-font;
+        font-size: 22px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+}

@@ -1,12 +1,14 @@
-$shadow: 0 3px 6px rgba(0, 0, 0, 0.20);
+@import "../../scss/colors";
 
 .header {
     height: 70px;
     margin: 0;
-    box-shadow: $shadow;
+    box-shadow: $header-shadow;
+    background: $c-header-background;
 
     &-title {
-      padding-top: 20px;
+      padding-top: 17px;
       margin: 0;
+      color: $c-secondary-font;
     }
 }
