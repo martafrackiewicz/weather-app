@@ -10,6 +10,7 @@ const MainSection = () => {
     const [weather, setWeather] = useState({
         name: "",
         description: "",
+        detailsDescription: "",
         temperature: "",
         humidity: "",
         wind: ""
@@ -39,7 +40,8 @@ const MainSection = () => {
             .then(data => {
                 setWeather({
                     name: data.name,
-                    description: data.weather.main,
+                    description: data.weather[0].main,
+                    detailsDescription: data.weather[0].description,
                     temperature: Math.round(kelvinToCelsius(data.main.temp)),
                     humidity: data.main.humidity,
                     wind: Math.round(data.wind.speed)
@@ -55,10 +57,10 @@ const MainSection = () => {
             {dataOk ?
                 <div className="data-container">
                     <Description name={weather.name} />
-                    <IconAndText text={`${weather.temperature}\u00b0C`} />
+                    <IconAndText text={`${weather.temperature}\u00b0C`} icon={weather.description} details={weather.detailsDescription} />
                     <div className="conditions-container">
-                        <IconAndText text={`${weather.humidity}%`} />
-                        <IconAndText text={`${weather.wind} m/s`} />
+                        <IconAndText text={`${weather.humidity}%`} icon={"humidity"} />
+                        <IconAndText text={`${weather.wind} m/s`} icon={"wind"} />
                     </div>
                 </div>
                 : <p>{errorMessage}</p>}
